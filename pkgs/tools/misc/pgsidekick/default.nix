@@ -13,7 +13,8 @@ stdenv.mkDerivation {
     mkdir -p $out/bin
     cp pglisten pglater $out/bin
   '';
-  meta = with stdenv.lib; {
+
+  meta = with lib; {
     description = "Two PostgreSQL utility programs: pglisten and pglater.";
     longDescription = ''
       This is a small collection of programs that allow a postgresql database to trigger
