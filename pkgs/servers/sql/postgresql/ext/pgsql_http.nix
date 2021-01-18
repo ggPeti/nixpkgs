@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
     cp *.control $out/share/postgresql/extension
   '';
 
-  meta = with stdenv.lib; {
+  meta = with lib; {
     description = "Temporal Tables PostgreSQL Extension ";
     homepage    = https://github.com/pramsey/pgsql-http;
     maintainers = with maintainers; [ ggpeti ];
